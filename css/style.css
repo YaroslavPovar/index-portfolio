@@ -1,0 +1,614 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+body, html{
+    overflow-x: hidden;
+}
+.nav{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+#checkbox_menu, .toggle{
+    display: none;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    align-self: center;
+    font-size: 13px;
+    padding: 10px 15px;
+    transition: background .2s linear;
+}
+.menu li a:hover{
+    background: #ffcc01;
+    border-radius: 3px;
+}
+.menu li a.logo{
+    font-size: 25px;
+    margin-right: 240px;
+}
+.menu li a.logo:hover{
+    background: white;
+}
+.menu li a.contacts{
+    margin-right: 100px;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+.intro{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+.intro_img{
+    background: url("../image/pexels-photo-1571460.jpeg") no-repeat center center;
+    width: 965px;
+    height: 640px;
+}
+.intro .intro-text{
+    position: absolute;
+    font-size: 62px;
+    right: 697px;
+    top: 220px;
+}
+.intro_contacts{
+    background: #ffcc01;
+    max-width: 590px;
+    position: absolute;
+    right: 124px;
+    top: 634px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    color: white;
+}
+.intro_contacts i{
+    color: white;
+    margin-right: 30px;
+}
+.intro_contacts p{
+    font-size: 18px;
+    margin-right: 60px;
+}
+.stats{
+    display: flex;
+    margin-top: 130px;
+}
+.stats_line{
+    display: flex;
+
+}
+.stats_text{
+    padding-right: 40px;
+
+}
+.stats_text h2{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.stats_text p{
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 27px;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background: #f6f5f4;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stats_square{
+    font-size: 40px;
+    color: #ffcc01;
+    margin-bottom: 15px;
+}
+.square_text{
+    font-size: 14px;
+}
+.apartments{
+    background: #f6f5f4;
+    padding: 60px 0;
+
+}
+.apart h2{
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+.card{
+    max-width: 348px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.card:hover{
+    background: #fafaf9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.card_container{
+    padding: 25px;
+}
+.card_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.card_info .money{
+    font-size: 18px;
+    color: #ffcc01;
+}
+.card_info i{
+    margin-right: 8px;
+}
+.card_info span:first-child{
+    margin-right: 18px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+.input_search_text{
+    margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    border: none;
+    outline: none;
+    padding-left: 62px;
+    font-size: 15px;
+    color: #919eb1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.input_submit_button{
+    width: 115px;
+    border: none;
+    height: 70px;
+    background: #ffcc01;
+    margin-left: -4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}.all{
+     width: 250px;
+     height: 70px;
+    border: none;
+    border-radius: 4px;
+     margin-left: 40px;
+     margin-top: 52px;
+    font-size: 15px;
+     cursor: pointer;
+ }
+ .buttons-search{
+     display: flex;
+     justify-content: space-around;
+ }
+.steps h2{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.step_text{
+    line-height: 27px;
+    font-size: 13px;
+    padding: 40px;
+}
+.mb_text{
+    margin-bottom: 70px;
+}
+.step_block{
+    width: 340px;
+    height: 370px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.step_block:hover{
+    background: #ffcc01;
+    color: white;
+}
+.step_num{
+    font-size: 200px;
+    position: relative;
+    top: -120px;
+    left: -30px;
+}
+.steps_container{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.step_block h4{
+    font-size: 14px;
+    margin: -100px 0 20px 40px;
+
+}
+.step_block h4 span{
+    margin-right: 15px;
+}
+.step_info{
+    margin-left: 20px;
+    line-height: 29px;
+}
+.step_info_last{
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 20px;
+    border-bottom: 3px solid black;
+}
+.serv_container{
+    display: flex;
+    margin-top: 70px;
+
+}
+.services img{
+    width: 100%;
+    height: auto;
+}
+.serv_img_container{
+    width: 58%;
+}
+.serv_text{
+    width: 42%;
+    margin-left: 3%;
+}
+.serv_text p{
+    margin-bottom: 60px;
+}
+.services h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.services p{
+    font-size: 13px;
+    line-height: 30px;
+    padding: 15px;
+}
+.services h4{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.agents{
+    background: #f6f5f4;
+    padding-top: 60px;
+    margin-top: 30px;
+}
+.agents h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.agents p{
+    font-size: 13px;
+    line-height: 30px;
+}
+.agents p:nth-child(3){
+    margin-bottom: 60px;
+}
+.agent_block{
+    display: flex;
+    justify-content: space-between;
+}
+.social i{
+    margin-right: 32px;
+    position: relative;
+    top: 7px;
+    color: black;
+    cursor: pointer;
+}
+.social i:hover{
+    color: #ffcc01;
+}
+.social i:last-child{
+    margin-right: 18px;
+    background: white;
+
+}
+.agents_cards{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 95px;
+}
+.agent_card{
+    max-width: 344px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.agent_card:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+.agent_info{
+    padding: 10px 0 0 25px;
+}
+.agent_name{
+    color: #ffcc01;
+    font-weight: bold;
+
+}
+@media screen and (max-width: 960px){
+    .menu li a.logo{
+        font-size: 25px;
+        margin-right: 70px;
+    }
+    .menu li a.contacts{
+        margin-right: 29px;
+    }
+    .stats{
+        display: flex;
+        margin-top: 130px;
+    }
+    .stats_line{
+        display: flex;
+
+    }
+    .square{
+        width: 150px;
+        height: 150px;
+        background: #f6f5f4;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .stats_square{
+        font-size: 40px;
+        color: #ffcc01;
+        margin-bottom: 15px;
+    }
+    .stats_text {
+        padding-right: 40px;
+        padding-left: 15px;
+    }
+    .agents_cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .agent_card{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .menu li a{
+        color: black;
+        text-decoration: none;
+        /*text-transform: uppercase;*/
+        align-self: center;
+        font-size: 13px;
+        padding: 10px 10px;
+        transition: background .2s linear;
+    }
+    .intro_contacts {
+        background: #ffcc01;
+        max-width: 1024px;
+        position: absolute;
+        right: 0;
+        top: 634px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 50px;
+        color: white;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+    .card{
+        overflow: hidden;
+    }
+    .steps_container {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step_block {
+        width: 340px;
+        height: 370px;
+        background: white;
+        box-shadow: 0 0 20px rgba(0,0,0,.3);
+        overflow: hidden;
+        margin-right: 10px;
+    }
+    .step_block:last-child{
+        margin-right: 0;
+    }
+    .agent_card {
+        max-width: 344px;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        margin-right: 10px;
+
+    }
+    .agent_card:last-child{
+        margin-right: 0;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 765px){
+
+    .toggle{
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 60px;
+        width: 100%;
+        color: #000000;
+        background: #ffcc01;
+        transition: all .1s linear;
+    }
+    .toggle:hover{
+        background: #d3a900;
+    }
+    #checkbox_menu:checked + label .touch li{
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+
+    }
+    #checkbox_menu:checked + label .touch{
+        height: 350px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height 0.3s linear;
+    }
+    .menu li{
+        display: flex;
+        align-self: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a{
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+    .menu li a.logo{
+        font-size: 21px;
+        margin: 0;
+    }
+    .menu li a.contacts{
+        margin-right: 0;
+    }
+    .intro{
+        margin-top: 10px;
+        display: block;
+        max-width: 100%;
+    }
+    .intro_img{
+        background-position: center right -164px;
+    }
+    .intro .intro-text{
+        position: relative;
+        font-size: 35px;
+        top: 140px;
+        right: -10px;
+        font-weight: 600;
+        color: white;
+
+    }
+    .intro_contacts{
+        position: relative;
+        right: 0;
+        top: -55px;
+        padding: 20px 10px;
+    }
+    .intro_contacts p{
+        font-size: 13px;
+        margin-right: 0;
+    }
+    .stats{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .stats_text{
+        padding: 30px;
+
+    }
+    .square_text{
+        padding: 10px;
+    }
+    .stats_text h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .stats_text p{
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .square{
+        height: 140px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    .input_search_text{
+        margin-top: 20px;
+        width: 130px;
+    }
+    .buttons-search{
+        flex-direction: column;
+        align-items: center;
+    }
+    .all{
+        background: white;
+        margin-top: 10px;
+    }
+    .steps_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .step_block{
+        margin-top: 10px;
+    }
+    .step_text .steps h2{
+        margin-left: 5%;
+        margin-bottom: 15px;
+    }
+    .serv_container{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .serv_img_container{
+        width: 100%;
+    }
+    .serv_text{
+        width: 100%;
+    }
+    .agents_cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agent_card{
+        margin-top: 10px;
+    }
+}
